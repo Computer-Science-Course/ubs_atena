@@ -13,3 +13,57 @@ input[type="text"]:read-only {
 input[type="text"] {}
 
 input[type="button"] {}
+
+.box-button-icon {
+    background-color: #fff;
+    color: var(--gray-10);
+    fill: var(--gray-10);
+    border: var(--gray-10) solid 1px;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+.box-button-icon:hover {
+    border: var(--blue-10) solid 1px;
+    color: var(--blue-10);
+    fill: var(--blue-10);
+}
+
+.box-button-icon:active, .active{
+    border: transparent solid 1px;
+    background-color: var(--blue-10);
+    color: #fff;
+    fill: #fff;
+}
+
+.red-box-button-icon {
+    background-color: var(--red-12);
+    color: var(--red-10);
+    fill: var(--red-10);
+    border: var(--red-10) solid 1px;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+.red-box-button-icon:hover {
+    border: var(--red-10) solid 1px;
+    color: var(--red-10);
+    fill: var(--red-10);
+}
+
+.red-box-button-icon:active {
+    border: transparent solid 1px;
+    background-color: var(--red-10);
+    color: var(--red-12);
+    fill: var(--red-12);
+}

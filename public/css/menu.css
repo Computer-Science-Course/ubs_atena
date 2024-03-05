@@ -1,0 +1,28 @@
+@import url('./colors/light.css');
+
+#main-menu {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#main-menu > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: max-content;
+}
+
+#main-menu > :first-of-type {
+    height: 100%;
+}
+
+#main-menu > :nth-child(2) {
+    height: 20%;
+}
