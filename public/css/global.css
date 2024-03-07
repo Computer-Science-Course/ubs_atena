@@ -17,12 +17,6 @@ body {
     flex-direction: column;
     box-sizing: border-box;
 }
-label {
-    color: var(--blue-6); /* Cor do texto */
-    margin-bottom: 570px;
-    margin-left: auto;
-    
-}
 
 #pacient-name{
     width: 704px;
@@ -38,5 +32,29 @@ label {
     /* Movi o topo da do input*/
     color: var(--gray-10);
     /* Define a cor para o texto que for digitado */
+}
+
+.custom-scrollbar {
+    max-width: 100%; /* Define a largura máxima do contêiner como 100% da largura da janela de visualização */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    overflow-y: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 1px; /* Altura da barra de rolagem */
+    width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da pista da barra de rolagem */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #1E90FF; /* Cor da alça da barra de rolagem */
+    border-radius: 5px; /* Borda arredondada da alça da barra de rolagem */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #1E90FF; /* Cor da alça da barra de rolagem ao passar o mouse */
 }
 
