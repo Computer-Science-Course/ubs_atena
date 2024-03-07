@@ -1,0 +1,95 @@
+.header{
+    color: #22346E;
+}
+
+.patient-info-container {
+    display: flex; 
+    gap: 10px;
+}
+
+.container-right{
+    position: relative;
+}
+
+.icon-search{
+    color: #A09FA6;
+}
+
+/* .button-trash, .button-pencil{
+    margin-right: 10px;
+} */
+
+.input-bar-primary{
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid #A09FA6;
+    outline: none;
+    color: #22346E;
+}
+
+.input-bar-primary:focus{
+    border-bottom: 1px solid #1E90FF;
+}
+
+
+.input-bar-sus-number{
+    border-radius: 4px;
+    border: 1px solid #A09FA6;
+    width: max-content;
+    margin-right: 10px;
+    color: #A09FA6;
+    outline: none;
+    
+}
+
+.input-bar-patient-name{
+    border-radius: 4px;
+    border: 1px solid #A09FA6;
+    width: 100%;
+    color: #A09FA6;
+    outline: none;
+}
+
+.button-user{
+    background: #1E90FF;
+    padding: 10px 0;
+    margin-top: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    width: 95%;
+    text-align: center;
+}
+
+.input-spacing{
+    margin-top: 16px;
+}
+
+.form-container {
+    max-width: 100%; /* Define a largura máxima do contêiner como 100% da largura da janela de visualização */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    overflow-y: none;
+}
+
+.form-container::-webkit-scrollbar {
+    height: 1px; /* Altura da barra de rolagem */
+    width: 10px;
+}
+
+.form-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da pista da barra de rolagem */
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background-color: #1E90FF; /* Cor da alça da barra de rolagem */
+    border-radius: 5px; /* Borda arredondada da alça da barra de rolagem */
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+    background-color: #1E90FF; /* Cor da alça da barra de rolagem ao passar o mouse */
+}
