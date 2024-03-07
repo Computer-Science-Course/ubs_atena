@@ -73,6 +73,7 @@ input[type="button"] {
     border: var(--blue-10) solid 1px;
     color: var(--blue-10);
     fill: var(--blue-10);
+    cursor: pointer;
 }
 
 .box-button-icon:active, .active{
@@ -100,6 +101,7 @@ input[type="button"] {
     border: var(--red-10) solid 1px;
     color: var(--red-10);
     fill: var(--red-10);
+    cursor: pointer;
 }
 
 .red-box-button-icon:active {
