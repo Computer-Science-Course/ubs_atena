@@ -1,6 +1,26 @@
 @import url('./colors/light.css');
 
-h1 {}
+/* h1 */
+#anamnese-title {
+    width: 704px;
+    height: 39px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-top: 85px;
+    margin-left: 70px;
+    size:32px;
+    line-height: 38.73px;
+
+    /* Adicionei margem para afastar do topo e da esquerda */
+    color: var(--blue-6);
+    /* Cor do texto */
+    font-size: 32px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Peso da fonte */
+}
 
 h2 {}
 
