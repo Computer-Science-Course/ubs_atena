@@ -1,0 +1,23 @@
+/* style.css */
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#pacient-name {
+    width: 704px;
+    height: 62;
+    border:1%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-right:none; /*Movi a borda direita do input*/
+    border-left: none; /* Movi a borda esquerda do input*/
+    border-top: none; /* Movi o topo da do input*/
+    color: #333; /* Define a cor para o texto que for digitado */
+}
+
+#container h1 {
+    color: #333;
+}

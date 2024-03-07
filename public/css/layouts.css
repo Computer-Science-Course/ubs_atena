@@ -24,10 +24,26 @@ body {
     padding: 1.5rem;
 }
 
+/* style.css */
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#container h1 {
+    color: #333;
+}
+
+
 #container > :first-child{
+
+
 
 }
 
 #container > :nth-child(2) {
 
 }
+

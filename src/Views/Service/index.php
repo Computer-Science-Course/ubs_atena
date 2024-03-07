@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/global.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/layouts.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+
     <title>Atendimeto</title>
 </head>
 
@@ -24,7 +25,8 @@
         </aside>
         <aside>
             <label for="pacient-name">Paciente</label>
-            <input type="text" id="pacient-name">
+            <input type="text" id="pacient-name" placeholder="Carteira do SUS ou nome do paciente">
+
         </aside>
     </main>
 </body>

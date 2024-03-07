@@ -17,3 +17,26 @@ body {
     flex-direction: column;
     box-sizing: border-box;
 }
+label {
+    color: var(--blue-6); /* Cor do texto */
+    margin-bottom: 570px;
+    margin-left: auto;
+    
+}
+
+#pacient-name{
+    width: 704px;
+    height: 62;
+    border: 1%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-right: none;
+    /*Movi a borda direita do input*/
+    border-left: none;
+    /* Movi a borda esquerda do input*/
+    border-top: none;
+    /* Movi o topo da do input*/
+    color: var(--gray-10);
+    /* Define a cor para o texto que for digitado */
+}
+
