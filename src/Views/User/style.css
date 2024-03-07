@@ -1,0 +1,76 @@
+.header {
+    color: #22346E;
+}
+.patient-info-container {
+    display: flex; 
+}
+
+.container-right{
+    position: relative;
+}
+
+.icon-search{
+    color: #A09FA6;
+}
+
+.patient-name{
+    color: #22346E;
+}
+
+.button-trash{
+    margin-right: 10px;
+}
+
+.button-pencil{
+    margin-right: 10px;
+}
+
+.input-bar-primary{
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid #A09FA6;
+    outline: none;
+    color: #22346E;
+}
+
+.input-bar-primary:focus{
+    border-bottom: 1px solid #1E90FF;
+}
+
+
+.input-bar-sus-number{
+    border-radius: 4px;
+    border: 1px solid #A09FA6;
+    width: 35%;
+    margin-right: 10px;
+    color: #A09FA6;
+    outline: none;
+}
+
+.input-bar-patient-name{
+    border-radius: 4px;
+    border: 1px solid #A09FA6;
+    width: 100%;
+    color: #A09FA6;
+    outline: none;
+}
+
+.button-user{
+    background: #1E90FF;
+    padding: 10px 0;
+    margin-top: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    width: 95%;
+    text-align: center;
+}
+
+.input-spacing{
+    margin-top: 16px;
+}
