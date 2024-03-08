@@ -202,7 +202,7 @@ class DatabaseController
         return $sets;
     }
 
-    public function updateWhere($table, $keys, $values, $where, $equals)
+    public function updateAllWhere($table, $keys, $values, $where, $equals)
     {
         // Build the SET part of the SQL query
         $set = $this->buildUpdateSetQueryChunk($keys, $values);
