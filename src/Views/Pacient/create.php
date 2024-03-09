@@ -1,3 +1,7 @@
+<?php
+require_once('../../../public/utils/index.php');
+check_sessions();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,7 +32,7 @@
                     <label for="patient-name" class="header">Nome paciente</label>
                     <input type="text" id="patient-name">
                 </div>
-                
+
                 <div class="input-spacing">
                     <label for="patient-birth-date" class="header">Data de Nascimento</label>
                     <input type="text" id="patient-birth-date">
@@ -69,15 +73,15 @@
                     <label for="patient-parent" class="header">Pai/Mãe</label>
                     <input type="text" id="patient-parent">
                 </div>
-                
+
                 <div class="button-user">
                     <!-- Aqui vai ficar o botão-->
                     <a href="index.php">
-                        <button type="submit" >SALVAR PACIENTE</button>
+                        <button type="submit">SALVAR PACIENTE</button>
                     </a>
                 </div>
             </form>
-            
+
 
         </aside>
     </main>

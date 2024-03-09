@@ -1,3 +1,8 @@
+<?php
+require_once('../../../public/utils/index.php');
+check_sessions();
+check_for_administrator();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

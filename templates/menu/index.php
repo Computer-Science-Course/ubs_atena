@@ -1,3 +1,6 @@
+<?php
+require_once('../../../public/utils/index.php');
+?>
 <head>
     <link rel="stylesheet" type="text/css" href="../../../public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/buttons.css">
@@ -15,7 +18,7 @@
             </svg>
         </a>
 
-        <!-- Client -->
+        <!-- Patient -->
         <a href="../Pacient" class="box-button-icon <?php echo $is_pacient_active ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user">
                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -24,14 +27,18 @@
         </a>
 
         <!-- User -->
-        <a href="../User" class="box-button-icon <?php echo $is_user_active ?>">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop">
-                <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
-            </svg>
-        </a>
+        <?php
+        if(is_administrator()){
+            echo '<a href="../User" class="box-button-icon ' . $is_user_active . '">';
+                echo '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop">';
+                    echo '<path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />';
+                echo '</svg>';
+            echo '</a>';
+        }
+        ?>
     </nav>
     <nav>
-        <a href="" class="red-box-button-icon">
+        <a href="../../Rules/Logout.php" class="red-box-button-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-door-open">
                 <path d="M13 4h3a2 2 0 0 1 2 2v14" />
                 <path d="M2 20h3" />

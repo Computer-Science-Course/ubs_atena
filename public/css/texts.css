@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @import url('./colors/light.css');
 
-/* h1 */
+:root {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
 #anamnese-title {
     width: 704px;
     height: 39px;
@@ -10,7 +18,7 @@
     margin: 10px;
     margin-top: 85px;
     margin-left: 70px;
-    size:32px;
+    size: 32px;
     line-height: 38.73px;
 
     /* Adicionei margem para afastar do topo e da esquerda */
@@ -22,14 +30,18 @@
     /* Peso da fonte */
 }
 
-h2 {}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: var(--blue-6);
+}
 
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-p {}
+label {
+    font-size: 14px;
+    color: var(--blue-6);
+}

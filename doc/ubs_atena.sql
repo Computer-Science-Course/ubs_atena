@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06/03/2024 às 15:44
+-- Tempo de geração: 09/03/2024 às 05:05
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Versão do PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -119,6 +119,14 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Despejando dados para a tabela `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `username`, `password`, `cpf`, `phone`, `email`, `user_type`) VALUES
+(1, 'Akira Toriyama', 'akira', '123', '12345678978', '1223235656', 'akira@goku.com', 'administrador'),
+(2, 'Son Goku', 'goku', '123', '98765432112', '9987876565', 'son@goku.com', 'funcionario');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -194,7 +202,7 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restrições para tabelas despejadas

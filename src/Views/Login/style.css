@@ -1,0 +1,27 @@
+#container {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 48px;
+    box-sizing: border-box;
+    width: 600px;
+    gap: 2rem;
+}
+
+#container>div {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#container>div>aside {
+    display: flex;
+    flex-direction: column;
+    justify-items: baseline;
+    width: 100%;
+}
+
+#container>div>:nth-child(2) {
+    gap: 32px;
+}
