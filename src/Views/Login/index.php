@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) {
 </head>
 
 <body>
-  <form action="../../Rules/Login.php" method="POST" id="container">
+  <form action="../../Services/Login.php" method="POST" id="container">
     <div>
       <aside>
         <h1>Login</h1>
