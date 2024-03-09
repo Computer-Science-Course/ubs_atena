@@ -34,7 +34,16 @@ body {
     /* Define a cor para o texto que for digitado */
 }
 
+.button-user {
+    position: relative;
+    bottom: 20px; /* Ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centraliza o botão horizontalmente */
+}
+
 .custom-scrollbar {
+    position: relative;
     max-width: 100%; /* Define a largura máxima do contêiner como 100% da largura da janela de visualização */
     overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
     overflow-y: none;
