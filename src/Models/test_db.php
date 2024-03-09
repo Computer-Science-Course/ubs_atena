@@ -1,6 +1,6 @@
 <?php
 /** 📦 | This import the controller for user.*/
-// include_once("../Controllers/UserContoller.php");
+// include_once("../Controllers/UserController.php");
 
 /** 🚦 | This create a new UserCotroller instance. */
 // $user_controller = new UserController();

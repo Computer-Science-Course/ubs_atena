@@ -1,3 +1,7 @@
+<?php
+require_once('../../../public/utils/index.php');
+check_sessions();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,7 +25,7 @@
     ?>
     <main id="container">
         <aside>
-            <h1>Atedimento</h1>
+            <h1>Atendimento</h1>
         </aside>
         <aside>
             <label for="pacient-name">Paciente</label>

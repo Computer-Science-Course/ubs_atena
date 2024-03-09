@@ -16,7 +16,7 @@ body {
     border: var(--gray-10) solid 1px;
 }
 
-#container > * {
+#container>* {
     height: 100%;
     width: 100%;
     display: flex;
@@ -32,18 +32,8 @@ body {
     padding: 20px;
 }
 
-#container h1 {
-    color: #333;
-}
 
 
-#container > :first-child{
+#container> :first-child {}
 
-
-
-}
-
-#container > :nth-child(2) {
-
-}
-
+#container> :nth-child(2) {}

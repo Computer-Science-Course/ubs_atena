@@ -1,3 +1,7 @@
+<?php
+require_once('../../../public/utils/index.php');
+check_sessions();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
