@@ -1,7 +1,7 @@
 <?php
 
-include_once("../Controllers/DatabaseController.php");
-include_once("../Models/MedicalHistory.php");
+include_once(dirname(__DIR__) . "/Controllers/DatabaseController.php");
+include_once(dirname(__DIR__) . "/Models/MedicalHistory.php");
 
 
 class MedicalHistoryController

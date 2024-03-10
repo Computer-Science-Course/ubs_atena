@@ -1,9 +1,9 @@
 <?php
 
-$ROO_PATH = __DIR__ . '/../..';
-require $ROO_PATH . '/vendor/autoload.php';
+$ROOT_PATH = __DIR__ . '/../..';
+require $ROOT_PATH . '/vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable($ROO_PATH);
+$dotenv = Dotenv\Dotenv::createImmutable($ROOT_PATH);
 $dotenv->load();
 
 /** Class with methods to handle databale */
