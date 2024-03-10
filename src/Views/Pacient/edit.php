@@ -77,6 +77,7 @@ check_sessions();
                 </div>
 
                 <!-- Quando type = "button" href vai -->
+                <br>
                 <a href="index.php">
                     <input class="button-user" type="submit" value="SALVAR MODIFICAÇÕES">
                 </a>
