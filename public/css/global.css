@@ -46,7 +46,7 @@ body {
     position: relative;
     max-width: 100%; /* Define a largura máxima do contêiner como 100% da largura da janela de visualização */
     overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
-    overflow-y: none;
+    /* overflow-y: none; */
 }
 
 .custom-scrollbar::-webkit-scrollbar {

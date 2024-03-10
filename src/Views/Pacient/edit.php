@@ -28,7 +28,8 @@ check_sessions();
             <h1 class="header">Editar Paciente</h1>
         </aside>
         <aside class="container-right">
-            <form method="post" action="">
+        <section class="custom-scrollbar">
+            <form method="post" action="../../Controllers/PatientController.php">
                 <div class="input-spacing">
                     <label for="patient-name" class="header">Nome paciente</label>
                     <input type="text" id="patient-name" class="">
@@ -75,13 +76,15 @@ check_sessions();
                     <input type="text" id="patient-parent" class="">
                 </div>
 
-                <div class="button-user">
-                    <!-- Aqui vai ficar o botão-->
-                    <a href="index.php">
-                        <button>SALVAR MODIFICAÇÕES</button>
-                    </a>
-                </div>
+                <!-- Quando type = "button" href vai -->
+                <a href="index.php">
+                    <input class="button-user" type="submit" value="SALVAR MODIFICAÇÕES">
+                </a>
+
             </form>
+        <section>
+            
+
         </aside>
     </main>
 </body>
