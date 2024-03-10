@@ -37,5 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      */
     $_SESSION['username'] = $user->getUsername();
     $_SESSION['user_type'] = $user->getUserType();
+    // tava testando mateus, se der bo pra ti tira kk -Newdon
+    $_SESSION['user_id'] = $user->getId();
+    // isso aqui de cima só
     header('Location: ../Views/Service/index.php');
 }
