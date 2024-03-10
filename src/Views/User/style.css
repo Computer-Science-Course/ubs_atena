@@ -16,10 +16,6 @@
     color: #A09FA6;
 }
 
-/* .button-trash, .button-pencil{
-    margin-right: 10px;
-} */
-
 .input-bar-sus-number{
     border-radius: 4px;
     border: 1px solid #A09FA6;
@@ -37,14 +33,6 @@
     color: #A09FA6;
     outline: none;
 }
-
-/* .button-user{
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-} */
 
 .input-spacing{
     margin-top: 16px;
