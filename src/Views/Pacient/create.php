@@ -79,10 +79,11 @@ check_sessions();
 
                         
                         <!-- Quando type = "button" href vai -->
-                        <br>
-                        <a href="index.php">
-                            <input class="button-user" type="submit" value="SALVAR PACIENTE">
-                        </a>
+                        <div class="input-spacing">
+                            <a href="index.php">
+                                <input class="button-user" type="submit" value="SALVAR PACIENTE">
+                            </a>
+                        </div>
                 </form>
             </section>
 

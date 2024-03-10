@@ -28,7 +28,7 @@ check_sessions();
             <h1 class="header">Paciente</h1>
         </aside>
         
-        <aside>
+        <aside class="container-right">
             <label for="pacient-name" class="header">Paciente</label>
             <div class="patient-info-container">
                 <input type="text" id="pacient-name" class="" placeholder="Carteira do SUS ou nome do paciente">
@@ -207,12 +207,15 @@ check_sessions();
                     <input class="input-bar-sus-number" value="679 6894 3467 5893" readonly>
                     <input class="input-bar-patient-name" value="Fulano de tal" readonly>
                 </div>
+
             </section>
             <!-- -->
-            <br>
-            <a href="create.php">
-                <input class="button-user" type="button" value="CADASTRAR NOVO PACIENTE">
-            </a>   
+                <div class="input-spacing">
+                    <a href="create.php">
+                        <input class="button-user" type="button" value="CADASTRAR NOVO PACIENTE">
+                    </a> 
+                </div>
+              
             <!-- -->
         </aside>
     </main>
