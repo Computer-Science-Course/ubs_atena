@@ -1,6 +1,6 @@
 <?php
 
-include_once("../Models/Database.php");
+include_once(dirname(__DIR__) . "/Models/Database.php");
 
 class DatabaseController
 {
