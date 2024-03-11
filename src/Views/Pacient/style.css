@@ -48,3 +48,8 @@ form {
     gap: 2rem;
 }
 
+.input-bar-date{
+    color: #A09FA6;
+    border: 2px solid #A09FA6;
+    border-radius: 5px;
+}

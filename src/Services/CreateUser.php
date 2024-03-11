@@ -4,17 +4,6 @@ include_once('../Controllers/UserController.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // $name = $_POST['name'] ?? '';
-    // $cpf = $_POST['cpf'] ?? '';
-
-    // $phone = $_POST['phone'] ?? '';
-    // $email = $_POST['email'] ?? '';
-
-    // $username = $_POST['username'] ?? '';
-    // $password: $_POST['password'] ?? '';
-    // $repeat_password: $_POST['repeat_password'] ?? '';
-    // $user_type: $_POST['user_type'] ?? '';
-
     $name = $_POST['name'] ?? '';
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
