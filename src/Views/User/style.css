@@ -37,3 +37,20 @@
 .input-spacing{
     margin-top: 16px;
 }
+
+form, form > section{
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.option-user-type{
+    border: 2px solid #A09FA6;
+    border-radius: 5px;
+    background: #1E90FF;
+    color: #fff;
+}

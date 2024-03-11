@@ -28,65 +28,72 @@ check_for_administrator();
         <aside>
             <h1 class="header">Criar Usuário</h1>
         </aside>
+
         <aside class="container-right">
-        <section class="custom-scrollbar">
+
+        
             <form action="../../Services/User.php" method="post">
-                <div class="input-spacing">
+                <section class="custom-scrollbar">
+                    <div class="input-spacing">
+                        
+                        <label for="user-name" class="header">Nome completo</label>
+                        <input type="text" class="input-bar-primary" id="user-name" name="name" placeholder="Nome completo do usuário"
+                            required autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-cpf" class="header">CPF</label>
+                        <input type="text" class="input-bar-primary" id="user-cpf" name="cpf" placeholder="CPF do usuário" required
+                            autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-phone" class="header">Telefone</label>
+                        <input type="text" class="input-bar-primary" id="user-phone" name="phone" placeholder="Telefone do usuário" required
+                            autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-email" class="header">E-mail</label>
+                        <input type="text" class="input-bar-primary" id="user-email" name="email" placeholder="E-mail do usuário" required
+                            autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-name-unico" class="header">Nome de usuário</label>
+                        <input type="text" class="input-bar-primary" id="user-name-unico" name="username" placeholder="Nome de usuário único"
+                            required autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-senha" class="header">Senha</label>
+                        <input type="text" class="input-bar-primary" id="user-senha" name="password" placeholder="Senha" required
+                            autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-repetir-senha" class="header">Repetir senha</label>
+                        <input type="text" class="input-bar-primary" id="user-repetir-senha" name="repeat_password" placeholder="Repetir senha"
+                            required autocomplete="off">
+                    </div>
+
+                    <div class="input-spacing">
+                        <label for="user-adm" class="header"> Tipo Usuário</label><br>
+                        <select class="option-user-type" name="user_type" id="user-adm" required>
+                            <option value="administrador">Administrador</option>
+                            <option value="funcionario">Funcionário</option>
+                            <option value="medico">Medico</option>
+                        </select>
+                    </div>
                     
-                    <label for="user-name" class="header">Nome completo</label>
-                    <input type="text" class="input-bar-primary" id="user-name" name="name" placeholder="Nome completo do usuário"
-                        required autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-cpf" class="header">CPF</label>
-                    <input type="text" class="input-bar-primary" id="user-cpf" name="cpf" placeholder="CPF do usuário" required
-                        autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-phone" class="header">Telefone</label>
-                    <input type="text" class="input-bar-primary" id="user-phone" name="phone" placeholder="Telefone do usuário" required
-                        autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-email" class="header">E-mail</label>
-                    <input type="text" class="input-bar-primary" id="user-email" name="email" placeholder="E-mail do usuário" required
-                        autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-name-unico" class="header">Nome de usuário</label>
-                    <input type="text" class="input-bar-primary" id="user-name-unico" name="username" placeholder="Nome de usuário único"
-                        required autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-senha" class="header">Senha</label>
-                    <input type="text" class="input-bar-primary" id="user-senha" name="password" placeholder="Senha" required
-                        autocomplete="off">
-                </div>
-
-                <div class="input-spacing">
-                    <label for="user-repetir-senha" class="header">Repetir senha</label>
-                    <input type="text" class="input-bar-primary" id="user-repetir-senha" name="repeat_password" placeholder="Repetir senha"
-                        required autocomplete="off">
-                </div>
-
-                <label for="user-adm" class="header"> É Administrador</label><br>
-                <select name="user_type" id="user-adm" required>
-                    <option value="administrador">Administrador</option>
-                    <option value="funcionario">Funcionário</option>
-                    <option value="medico">Medico</option>
-                </select>
+                </section>
                 
-            <a href="create.php">
-                <input class="button-user" type="submit" value="SALVAR NOVO USUARIO">
-            </a>  
+                <a href="index.php">
+                    <input class="button-user" type="submit" value="SALVAR NOVO USUARIO">
+                </a>  
             </form>
             
-        </section>
+        
            
             
 

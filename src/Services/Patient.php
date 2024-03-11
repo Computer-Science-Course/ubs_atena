@@ -46,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $patient = $pacient_controller->create($patient);
 
     if ($patient) {
-        echo "Paciente criado com sucesso. ID: " . $patient;
+        header('Location: ../Views/Pacient/index.php');
+        die();
     } else {
         echo "Erro ao criar paciente.";
     }

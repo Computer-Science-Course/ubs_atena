@@ -28,9 +28,9 @@ check_sessions();
         </aside>
 
         <aside>
-            <section class="custom-scrollbar">
+            
                 <form method="post" action="../../Services/Patient.php">
-                    
+                    <section class="custom-scrollbar">
                         <div class="input-spacing">
                             <label for="patient-name" class="header">Nome paciente</label>
                             <input type="text" id="patient-name" name="name" required autocomplete="off">
@@ -77,15 +77,13 @@ check_sessions();
                             <input type="text" id="patient-parent" name="parent" required autocomplete="off">
                         </div>
 
+                    </section>
                         
-                        <!-- Quando type = "button" href vai -->
-                        <div class="input-spacing">
-                            <a href="index.php">
-                                <input class="button-user" type="submit" value="SALVAR PACIENTE">
-                            </a>
-                        </div>
+                    <a href="index.php">
+                        <input  class="button-user" type="submit" value="SALVAR PACIENTE">
+                    </a>
                 </form>
-            </section>
+            
 
         </aside>
     </main>
