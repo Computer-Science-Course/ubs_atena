@@ -95,12 +95,10 @@ $patients = $patientController->getAll();
                 
             </section>
             <!-- -->
-                <div class="input-spacing">
-                    <a href="create.php">
-                        <input class="button-user" type="button" value="CADASTRAR NOVO PACIENTE">
-                    </a> 
-                </div>
-              
+            <a href="create.php">
+                <input class="button-user" type="button" value="CADASTRAR NOVO PACIENTE">
+            </a>
+            
             <!-- -->
         </aside>
     </main>

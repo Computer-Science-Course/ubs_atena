@@ -57,7 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $user_controller->create($user);
 
     if ($user) {
-        echo "Usuário criado com sucesso. ID: " . $user;
+        header('Location: ../Views/User/index.php');
+        die();
     } else {
         echo "Erro ao criar usuário.";
     }

@@ -37,3 +37,14 @@
 .input-spacing{
     margin-top: 16px;
 }
+
+form, form > section{
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+

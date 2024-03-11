@@ -94,6 +94,7 @@ $users = $userController->getAll();
                 <input class="button-user" type="button" value="CADASTRAR NOVO USUARIO">
             </a>   
 
+            
         </aside>
 
     </main>
