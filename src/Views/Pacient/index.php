@@ -39,7 +39,7 @@ $patients = $patientController->getAll();
         <aside class="container-right">
             <label for="pacient-name" class="header">Paciente</label>
             <div class="patient-info-container">
-                <input type="text" id="pacient-name" class="" placeholder="Carteira do SUS ou nome do paciente">
+                <input type="text" id="pacient-name" placeholder="Carteira do SUS ou nome do paciente">
                 <label for="pacient-name">
                     <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -60,8 +60,8 @@ $patients = $patientController->getAll();
             <!-- Metodo para mostrar pacientes --> 
                 <?php foreach ($patients as $patient): ?>
                     <div class="patient-info-container">
-                        <a href="">
-                            <button href="Apagar_Paciente" class="red-box-button-icon">
+                        <a href="../../Services/DeletePatient.php?patient_id=<?php echo $patient->getId()?>">
+                            <button class="red-box-button-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-trash-2">
