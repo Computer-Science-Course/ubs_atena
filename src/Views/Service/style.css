@@ -1,10 +1,20 @@
 /* style.css */
 
+.container-right {
+    position: relative;
+    
+}
+
+.patient-info-container {
+    display: flex; 
+    gap: 10px;
+}
 #container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
+
 
 #pacient-name {
     width: 704px;
@@ -16,8 +26,121 @@
     border-left: none; /* Movi a borda esquerda do input*/
     border-top: none; /* Movi o topo da do input*/
     color: #333; /* Define a cor para o texto que for digitado */
+        
 }
 
 #container h1 {
-    color: #333;
+    color: #22346E;
+    ;
+}
+
+label[for="pacient-name"] {
+    color: #22346E; /*Cor do texto 'Paciente'(#22346E-blue-6) */
+}
+
+
+.icon-search{
+    color: #7E7D86;
+}
+
+.input-bar-sus-number{
+    border-radius: 4px;
+    border: 1px solid #7E7D86;
+    width: max-content;
+    margin-right: 10px;
+    color: #7E7D86;
+    outline: none;
+    padding: 8px;
+    
+}
+
+.input-bar-patient-name{
+    border-radius: 4px;
+    border: 1px solid #7E7D86;
+    width: 100%;
+    color: #7E7D86;
+    outline: none;
+}
+
+.button-user{
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    cursor:pointer;
+    width: 95%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background: #5373E7;
+    color: #FFFFFF;
+    padding: 8px;
+
+}
+
+/* Create.php */
+
+.header {
+    color: #22346E; 
+}
+.input-spacing-checkbox label {
+    color: #22346E; 
+}
+
+/* Espaçamento geral entre os campos */
+.input-spacing {
+    margin-top: 20px;
+}
+
+/* Estilo para os campos de entrada */
+.input-spacing input {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid #7E7D86;
+    margin-bottom: 10px;
+}
+
+/* Estilo específico para o campo 'Altura' */
+#height {
+    margin-top: 10px;
+}
+
+/* Estilo para a caixa de observações médicas */
+#medical-observations {
+    width: 100%;
+    height: 91px;
+    padding: 8px;
+    border: 1px solid #7E7D86;
+    margin-bottom: 10px;
+    border-color:  #7E7D86;
+}
+
+.input-spacing-checkbox {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input-spacing-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.input-spacing-checkbox label {
+    font-size: 14px;
+}
+/* Edit.php */
+#clinical-data {
+    width: 100%;
+    height: 91px;
+    padding: 8px;
+    border: 1px solid #7E7D86;
+    margin-bottom: 10px;
+    border-color:  #7E7D86;
 }
