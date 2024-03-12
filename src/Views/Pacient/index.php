@@ -40,6 +40,7 @@ $patients = $patientController->getAll();
             <label for="pacient-name" class="header">Paciente</label>
             <div class="patient-info-container">
                 <input type="text" id="pacient-name" placeholder="Carteira do SUS ou nome do paciente">
+                
                 <label for="pacient-name">
                     <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -75,7 +76,7 @@ $patients = $patientController->getAll();
                         </a>
                         
 
-                        <a href="edit.php">
+                        <a href="edit.php?patient_id=<?php echo $patient->getId()?>">
                             <button class="box-button-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
