@@ -132,10 +132,9 @@ check_sessions();
 
 
                 <div class="button-user">
-                 <a href="create.php">
-                    <button>CADASTRAR NOVO PACIENTE</button>
-                </a>
-            </div>
+                    <a href="create.php" class="button-user-link">CRIAR NOVO ATENDIMENTO</a>
+                </div>
+
 
 
     </main>

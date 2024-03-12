@@ -1,113 +1,78 @@
-/* style.css */
-
-.container-right {
-    position: relative;
-    
-}
-
-.patient-info-container {
-    display: flex; 
-    gap: 10px;
-}
-#container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-#pacient-name {
-    width: 704px;
-    height: 62;
-    border:1%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-right:none; /*Movi a borda direita do input*/
-    border-left: none; /* Movi a borda esquerda do input*/
-    border-top: none; /* Movi o topo da do input*/
-    color: #333; /* Define a cor para o texto que for digitado */
-        
+.header{
+    color: #22346E;
 }
 
 #container h1 {
-    color: #22346E;
-    ;
+    color: #22346E; /* Cor azul desejada */
+}
+.patient-info-container {
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-label[for="pacient-name"] {
-    color: #22346E; /*Cor do texto 'Paciente'(#22346E-blue-6) */
+.container-right{
+    position: relative;
 }
-
 
 .icon-search{
-    color: #7E7D86;
+    color: #A09FA6;
 }
 
 .input-bar-sus-number{
     border-radius: 4px;
-    border: 1px solid #7E7D86;
+    border: 1px solid #A09FA6;
     width: max-content;
     margin-right: 10px;
-    color: #7E7D86;
+    color: #A09FA6;
     outline: none;
-    padding: 8px;
     
 }
 
 .input-bar-patient-name{
     border-radius: 4px;
-    border: 1px solid #7E7D86;
+    border: 1px solid #A09FA6;
     width: 100%;
-    color: #7E7D86;
+    color: #A09FA6;
     outline: none;
 }
 
-.button-user{
-    padding: 8px;
-    border-radius: 8px;
-    margin-top: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.input-spacing{
+    margin-top: 10px;
+}
+
+form, form > section{
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-bar-date{
+    color: #A09FA6;
+    border: 2px solid #A09FA6;
     border-radius: 5px;
-    cursor:pointer;
-    width: 95%;
+}
+
+.button-user-link {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    background: #5373E7;
-    color: #FFFFFF;
-    padding: 8px;
-
+    background-color: #5373E7; /* Cor de fundo do botão */
+    color: #FFFFFF; /* Cor do texto do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Create.php */
-
-.header {
-    color: #22346E; 
-}
-.input-spacing-checkbox label {
-    color: #22346E; 
-}
-
-/* Espaçamento geral entre os campos */
-.input-spacing {
-    margin-top: 20px;
-}
-
-/* Estilo para os campos de entrada */
-.input-spacing input {
-    width: 100%;
-    height: 35px;
-    padding: 8px;
-    border: 1px solid #7E7D86;
-    margin-bottom: 10px;
-}
-
-/* Estilo específico para o campo 'Altura' */
-#height {
-    margin-top: 10px;
+.button-user-link:hover {
+    background-color:#5373E7;
+    ; /* Cor de fundo do botão ao passar o mouse */
 }
 
 /* Estilo para a caixa de observações médicas */
@@ -117,7 +82,48 @@ label[for="pacient-name"] {
     padding: 8px;
     border: 1px solid #7E7D86;
     margin-bottom: 10px;
-    border-color:  #7E7D86;
+}
+
+/* Estilo para a caixa de dados clínicos */
+#clinical-data {
+    width: 100%;
+    height: 91px;
+    padding: 8px;
+    border: 1px solid #7E7D86;
+    margin-bottom: 10px;
+ }
+
+.input-spacing {
+    margin-bottom: 15px; 
+}
+
+.button-user {
+    margin-top: 15px; 
+}
+
+.input-spacing-checkbox.checkbox-container {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que os itens se movam para a próxima linha se não houver espaço suficiente */
+}
+
+.input-spacing-checkbox input[type="checkbox"] {
+    margin-right: 30px; /* Espaçamento entre o checkbox e o texto */
+    appearance: none; /* Remove o estilo padrão do sistema */
+    width: 6px; /* Defina a largura desejada da caixa de seleção */
+    height: 5px; /* Defina a altura desejada da caixa de seleção */
+    background-color: #A09FA6; /* Cor de fundo do checkbox */
+    border: 1px solid #A09FA6; /* Cor da borda do checkbox */
+    border-radius: 4px; /* Borda arredondada */
+    
+}
+.input-spacing-checkbox input[type="checkbox"]:checked {
+    background-color: #5373E7; /* Cor de fundo quando a caixa de seleção estiver marcada */
+    border-color: #5373E7; /* Cor da borda quando a caixa de seleção estiver marcada */
+}
+
+.input-spacing-checkbox label {
+    display: flex;
+    align-items: center;
 }
 
 .input-spacing-checkbox {
@@ -126,21 +132,6 @@ label[for="pacient-name"] {
     margin-top: 5px;
     display: flex;
     align-items: center;
-}
+    color: #22346E;
 
-.input-spacing-checkbox input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.input-spacing-checkbox label {
-    font-size: 14px;
-}
-/* Edit.php */
-#clinical-data {
-    width: 100%;
-    height: 91px;
-    padding: 8px;
-    border: 1px solid #7E7D86;
-    margin-bottom: 10px;
-    border-color:  #7E7D86;
 }
