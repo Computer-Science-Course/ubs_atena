@@ -34,7 +34,7 @@ check_sessions();
                 <section class="custom-scrollbar">
                     <div class="input-spacing">
                         <label for="complaint" class="header">Reclamação</label>
-                        <input type="text" id="complaint" required autocomplete="off">
+                        <input type="text" id="complaint" name="complaint" autocomplete="off">
                     </div>
 
                     <div class="input-spacing">
@@ -44,22 +44,22 @@ check_sessions();
 
                     <div class="input-spacing">
                         <label for="temperature" class="header">Temperatura</label>
-                        <input type="text" id="temperature" required autocomplete="off">
+                        <input type="text" id="temperature" name="temperature" required autocomplete="off">
                     </div>
 
                     <div class="input-spacing">
                         <label for="saturation" class="header">Saturação</label>
-                        <input type="text" id="saturation" required autocomplete="off">
+                        <input type="text" id="saturation" name="saturation" autocomplete="off">
                     </div>
 
                     <div class="input-spacing">
                         <label for="weight" class="header">Peso</label>
-                        <input type="text" id="weight" required autocomplete="off">
+                        <input type="text" id="weight" name="weight" required autocomplete="off">
                     </div>
 
                     <div class="input-spacing">
                         <label for="height" class="header">Altura</label>
-                        <input type="text" id="height" required autocomplete="off">
+                        <input type="text" id="height" name="height" autocomplete="off">
                     </div>
                     
                     <div class="input-spacing-checkbox checkbox-container">
