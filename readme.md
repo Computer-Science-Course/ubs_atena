@@ -35,11 +35,27 @@ Este é o projeto UBS Atena, um sistema de gerenciamento de unidades básicas de
    - Crie um novo banco de dados chamado `ubs_atena`.
    - Importe o arquivo `docs/ubs_atena.sql` para o banco de dados recém-criado.
 
-7. **Acessar o Sistema:**
+7. **Configurar Variáveis de Ambiente:**
+   - No diretório raiz do projeto (`ubs_atena`), localize o arquivo `.example.env`.
+   - Faça uma cópia deste arquivo e renomeie-o para `.env`. Isso pode ser feito executando o seguinte comando no terminal:
+     ```
+     cp .example.env .env
+     ```
+   - Abra o arquivo `.env` em um editor de texto e preencha os campos com as informações do seu ambiente de banco de dados. Por exemplo:
+     ```
+     SERVER=localhost
+     PORT=3306
+     USERNAME=root
+     PASSWORD=password
+     DATABASE=ubs_atena
+     ```
+   - Certifique-se de preencher os valores apropriados para `SERVER`, `PORT`, `USERNAME`, `PASSWORD` e `DATABASE` de acordo com a configuração do seu ambiente de desenvolvimento.
+
+8. **Acessar o Sistema:**
    - Abra um navegador e digite `http://localhost/ubs_atena`.
    - Você será redirecionado para a página de login do sistema.
 
-8. **Login:**
+9. **Login:**
    - Utilize um dos dois usuários pré-existentes para fazer login:
      1. **Administrador:**
         - Login: akira
